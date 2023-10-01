@@ -1,0 +1,12 @@
+#loading {
+    /* (A1) COVER FULL PAGE */
+    position: fixed;
+    top: 0; left: 0; z-index: 999;
+    width: 100vw; height: 100vh;
+   
+    /* (A2) SPINNER IMAGE */
+    background-color: black;
+    background-image: url("ajax-loader.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+  }

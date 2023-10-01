@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(59, 59, 59);
+}
+
+.container{
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.wrapper {
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+
+/* Style the form - display items horizontally */
+.form-inline {
+    flex-flow: row wrap;
+    align-items: center;
+    display: inline-block;
+    background-color: gray;
+  }
+  
+  /* Add some margins for each label */
+  .form-inline label {
+    font-size: 30px;
+    margin: 5px 10px 5px 0;
+    padding-left: 100px;
+    color: #fff;
+    background-color: gray;
+  }
+  
+  /* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+  @media (max-width: 800px) {
+    .form-inline input {
+      margin: 10px 0;
+    }
+  
+    .form-inline {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+
+.rename{
+    display: block;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-top: 50px;
+}  
+
+ /* Style the input fields */
+ .rename input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style the submit button */
+  .rename button {
+    padding-left: 100px;
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    border: 1px solid #ddd;
+    color: white;
+  }
+  
+  .rename button:hover {
+    background-color: royalblue;
+  }
+
+  @media (max-width: 800px) {
+    .rename input {
+      margin: 10px 0;
+    }
+  
+    .rename {
+      flex-direction:row;
+      align-items: center;
+    }
+  }
+
+  :root {
+    --white: #FFFFFF;
+  }
+
+
+    .empty{
+        margin-left: 35px;
+        font-size:60px;
+        position: absolute;
+        visibility:visible;
+    }
+    .empty:before {
+        content: "\2605";
+        color: var(--white);
+        position: absolute;
+        visibility:visible;
+        }
+
+
+body {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.download {
+    margin-top: 100px;
+    padding-left: 100px;
+    padding: 20px 30px;
+    background-color: rgb(24, 134, 245);
+    border: 1px solid #ddd;
+    color: white;
+}
+
+.home {
+    margin-bottom: 50px;
+    padding-left: 100px;
+    padding: 20px 30px;
+    background-color: rgb(24, 134, 245);
+    border: 1px solid #ddd;
+    color: white;
+}
+
+    .download:hover{
+        background-color: rgb(7, 122, 236);
+    }
+
+.groups{
+    width: 100%;
+    border-radius: 5px;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+    display: block;
+}
+
+.groups button {
+    margin:0 auto;
+    display:block;
+    margin-top: 20px;
+    padding: 15px 80px;
+    background-color: dodgerblue;
+    border: 1px solid #ddd;
+    color: white;
+    align-items: center;
+    text-align: center;
+  }
+
+  .groups a {
+    margin-top: 0px;
+    padding: 0px;
+    color: white;
+    display: block;
+    align-items: center;
+    font-size: 26px;
+  }

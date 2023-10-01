@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fog Explorer</title>
+    <link rel="stylesheet" href="styleFile.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:5500/loadingScreen/1b-load-spinner.css">
+    <script src="http://127.0.0.1:5500/loadingScreen/1c-load-spinner.js"></script>
+  </head>
+  <body>
+        <!-- (A2) LOADING SPINNER -->
+        <div id="loading"></div>
+
+        <div>
+          <button class="home" onclick="home()">Home</button>
+        </div>
+
+        <div class="form-inline">
+            <label id="file">File Name: </label>
+            <label id="date">Date: </label>
+            <label id="storage">Storage Size: </label>
+        </div>
+          
+        <div class="wrapper">
+
+            <div class="btn-group">
+                <button class="empty"></button>
+                <button class="download">Download</button>
+            </div>
+
+            </div>
+
+        </div>
+
+        <script>
+          // JUST RUN LOADER() IF NO SCRIPTS TO LOAD
+          window.addEventListener("DOMContentLoaded", () => loader([
+            "fileAll.CSS", "fileAll.js", "https://cdnjs.cloudflare.com/ajax/libs/WHATEVER.JS"
+          ]));
+          </script>
+  </body>
+</html>

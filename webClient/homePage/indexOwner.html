@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fog Explorer</title>
+    <!-- (A1) LOADING SPINNER -->
+    <link rel="stylesheet" href="http://127.0.0.1:5500/loadingScreen/1b-load-spinner.css">
+    <script src="http://127.0.0.1:5500/loadingScreen/1c-load-spinner.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- (A2) LOADING SPINNER -->
+    <div id="loading"></div>
+
+    <div class="container">
+        
+
+      <div class="explorerSide">
+        <div class="topnav">
+          <a id="Account" href="http://127.0.0.1:5500/Account/account.html">Account</a>
+          <a class="active" id="IndexOwner" href="http://127.0.0.1:5500/homePage/IndexOwner.html">Files By You</a>
+          <a id="IndexAll" href="http://127.0.0.1:5500/homePage/IndexAll.html">All Files</a>
+          <a id="Groups" href="http://127.0.0.1:5500/GroupPage/indexGroup.html">Groups</a>
+          <a id="Upload" href="http://127.0.0.1:5500/Upload/upload.html">Upload</a>     
+          <a id="Storage">Storage Free:</a>                
+        </div>
+        
+
+      </div>
+      <div class="explorer">
+        <div class="files">
+
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // JUST RUN LOADER() IF NO SCRIPTS TO LOAD
+      window.addEventListener("DOMContentLoaded", () => loader([
+        "indexOwner.CSS", "indexOwner.js", "https://cdnjs.cloudflare.com/ajax/libs/WHATEVER.JS"
+      ]));
+      </script>
+  </body>
+</html>
